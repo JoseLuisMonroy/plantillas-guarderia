@@ -74,7 +74,7 @@ function dormir(){
     const banner = `
     <div class="registro">
         <label for="hora">Hora de Inicio:</label>
-        <input type="text" id="hora" value="${new Date().toLocaleTimeString()}" readonly>
+        <input type="text" id="hora" value="${new Date().toLocaleTimeString()}" readonly class="hora"> 
 
         <label for="hora">Hora de Fin:</label>
         <input type="time" id="horaFin">
@@ -93,7 +93,7 @@ function comer(){
     const banner = `
     <div class="registro">
         <label for="hora">Hora:</label>
-        <input type="text" id="hora" value="${horaActual}" readonly>
+        <input type="text" id="hora" value="${horaActual}" readonly class="hora">
 
         <label for="menu">Menú del día:</label>
         <select id="menu">
@@ -151,7 +151,7 @@ function observaciones(){
     const banner = `
     <div class="registro">
         <label for="hora">Hora:</label>
-        <input type="text" id="hora" value="${horaActual}" readonly>
+        <input type="text" id="hora" value="${horaActual}" readonly class="hora">
 
         <label for="observaciones">Observaciones:</label>
         <textarea id="observaciones" rows="4" cols="50" class="hora"></textarea>
