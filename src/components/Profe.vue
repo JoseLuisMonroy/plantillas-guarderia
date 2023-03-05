@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reporte de el alumno</title>
-    <link rel="stylesheet" href="D:\mnry7\Documents\plantillas-guarderia\styles\profesor.css" media="screen">
-    <script src="D:\mnry7\Documents\plantillas-guarderia\js\reporteMaestra.js"></script>
-
-
-</head>
-<body>
+<template>
     <div class="main">
         <div class="cabecera">
             <h1>Reporte de el alumno</h1>
@@ -34,5 +22,16 @@
         <div class="reportes" id="reportes">
         </div>
     </div>
-</body>
-</html>
+</template>
+
+<script>
+export default {
+    name: 'ProfVista',
+    components: {
+    }
+}
+</script>
+
+<style scoped>
+@import "../assets/estilos.css";
+</style>
