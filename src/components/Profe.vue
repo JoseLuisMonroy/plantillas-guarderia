@@ -25,6 +25,8 @@
 <script>
 import accion from './services/profe.js'
 
+import axios from 'axios';
+
 window.onload = function() {
     /*const xhr = new XMLHttpRequest();
     xhr.open("GET", "http://localhost:3000/alumnos");
@@ -47,6 +49,20 @@ window.onload = function() {
         selectAlumnos.add(option);
         });
     }*/
+    axios
+        .get('/alumnos.json')
+        .then(response => {
+            this.jsonData = response.data;
+            const selectAlumnos = document.getElementById("alumnos");
+            this.jsonData.forEach(alumno => {
+                const option = document.createElement("option");
+                option.text = alumno.nombre;
+                selectAlumnos.add(option);
+            });
+        })
+        .catch(error => {
+            console.log(error);
+        });
 
     const select = document.querySelector("#registros");
     select.addEventListener("change", function(){
@@ -146,6 +162,11 @@ window.onload = function() {
 
 
 export default {
+    data() {
+        return {
+        jsonData: null,
+        };
+    },
     name: 'ProfVista',
     components: {
     }

@@ -1,0 +1,40 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "siestas": [
+      {
+        "horaIngresada": "13:00",
+        "horaFin": "14:00"
+      },
+      {
+        "horaIngresada": "16:30",
+        "horaFin": "17:00"
+      },
+      {
+        "horaIngresada": "6:30",
+        "horaFin": "18:00"
+      }
+    ],
+    "comida": {
+      "totalComido": "Comio poco",
+      "comida": "Pollo asado con ensalada",
+      "horaIngresada": "14:00"
+    },
+    "bano": [{
+      "tipo": "1",
+      "horaIngresada": "15:30"
+    }
+  ],
+    "observaciones":[{
+      "horaIngresada": "17:30",
+      "observacion": "El alumno se mostró muy participativo durante la clase de matemáticas, pero se distrajo en la clase de historia."
+    }]
+  },
+    {
+      "nombre": "María García",
+      "siestas": [],
+      "comida": {},
+      "bano": {},
+      "observaciones": {}
+    }
+  ]

@@ -7,7 +7,7 @@
         <div class="seleccionar">
             <h2>En caso de tener mas de un hijo o hija en el plantel, porfavor seleccione el reporte de quien desea ver</h2>
             <select name="alumnos" id="alumnos" class="menu">
-                <option value="0">JuanitoPerez</option>
+                <option value="0" id="nombreAlumno"></option>
             </select>
         </div>
         <div class="reportes">
@@ -18,10 +18,6 @@
                         <th>Hora de inicio</th>
                         <th>Hora de fin</th>
                     </tr>
-                    <tr>
-                        <td>8:00</td>
-                        <td>8:30</td>
-                    </tr>
                 </table>
                 <div>
                 <table id="comer" class="comer">
@@ -31,11 +27,6 @@
                         <th>Comida</th>
                         <th>Que tanto comio</th>
                     </tr>
-                    <tr>
-                        <td>8:00</td>
-                        <td>Desayuno</td>
-                        <td>Comio todo</td>
-                    </tr>
                 </table>
                 </div>
                 <div>
@@ -43,9 +34,7 @@
                     <caption>Baño</caption>
                     <tr>
                         <th>Hora</th>
-                    </tr>
-                    <tr>
-                        <td>8:00</td>
+                        <th>Que hizo?</th>
                     </tr>
                 </table>
                 </div>
@@ -59,7 +48,19 @@
 </template>
 
 <script>
-
+import axios from 'axios';
+import accion from './services/tutor.js';
+window.onload = function(){
+    axios
+        .get('/alumnos.json')
+        .then(response => {
+            this.jsonData = response.data;
+            accion.llenarTablas(this.jsonData[0]);          
+        })
+        .catch(error => {
+            console.log(error);
+        });
+}
 export default {
     name: 'TutorView',
     components: {
