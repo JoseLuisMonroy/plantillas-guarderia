@@ -18,7 +18,7 @@ body {
   background-color: #f5f5f5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, caption{
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
@@ -36,6 +36,25 @@ h2 {
 img {
   max-width: 100%;
   filter: blur(5px);
+}
+
+nav{
+  background-color: #4c82af;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover{
+  color: #0019fa;
 }
 
 form label {
@@ -86,7 +105,16 @@ form select:focus {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
 .noAfectar{
   border: none;
   background-color: transparent;
@@ -98,9 +126,6 @@ form select:focus {
   border-bottom: 1px solid #4e9bff;
 }
 .menu{
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px;
   background-color: transparent;
   font-weight: 700;
   border: none;
@@ -108,8 +133,76 @@ form select:focus {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+.reportes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tablas{
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tablas > div{
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
 
-@media screen and (max-width: 767px) {
+.dormir{
+  border-collapse: collapse;
+  border: 3px solid #4e9bff;
+}
+.dormir td{
+  border: 1px solid #4e9bff;
+  padding: 10px;
+}
+.dormir th{
+  border: 1px solid #4e9bff;
+  padding: 10px;
+  background-color: #4e9bff;
+  color: white;
+}
+.comer{
+  border-collapse: collapse;
+  border: 3px solid #ff4ec4;
+}
+.comer td{
+  border: 1px solid #ff4ec4;
+  padding: 10px;
+}
+.comer th{
+  border: 1px solid #ff4ec4;
+  padding: 10px;
+  background-color: #ff4ec4;
+  color: white;
+}
+.bano{
+  border-collapse: collapse;
+  border: 3px solid #ff4e4e;
+}
+.bano td{
+  border: 1px solid #ff4e4e;
+  padding: 10px;
+}
+.bano th{
+  border: 1px solid #ff4e4e;
+  padding: 10px;
+  background-color: #ff4e4e;
+  color: white;
+}
+@media screen and (max-width: 31356px) {
 
   .login{
     max-width: 100%;

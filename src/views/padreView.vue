@@ -1,5 +1,15 @@
 <template>
-  <div class="profe">
-    <h1>Hola XD</h1>
+  <div class="padre">
+    <tutorView/>    
   </div>
 </template>
+
+<script>
+import tutorView from '@/components/tutorView.vue'
+export default {
+    name: 'PadreView',  
+    components: {
+        tutorView
+    }
+}
+</script>
