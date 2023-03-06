@@ -16,6 +16,11 @@ const routes = [
     path: '/maestro',
     name: 'maestro',
     component: () => import(/* webpackChunkName: "maestro" */ '../views/MaestroView.vue')
+  },
+  {
+    path: '/alumnos',
+    name: 'alumnos',
+    component: () => import(/* webpackChunkName: "alumnos" */ '../components/services/prueba.json')
   }
 ]
 

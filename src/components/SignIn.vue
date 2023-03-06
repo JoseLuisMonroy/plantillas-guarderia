@@ -9,7 +9,7 @@
       <div class="division">
         <div class="punto"></div>
         <div class="linea"></div>
-      </div>
+      </div><br><br>
       <input class="form-submit" type="submit" value="Ingresar">
     </form>
   </div>

@@ -1,0 +1,35 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "siestas": [
+      {
+        "horaIngresada": "2023-03-03T13:00:00Z",
+        "horaFin": "2023-03-03T14:00:00Z"
+      },
+      {
+        "horaIngresada": "2023-03-03T16:30:00Z",
+        "horaFin": "2023-03-03T17:00:00Z"
+      }
+    ],
+    "comida": {
+      "menuSeleccionado": "Menú del día",
+      "comidaSeleccionada": "Pollo asado con ensalada",
+      "horaIngresada": "2023-03-03T14:00:00Z"
+    },
+    "bano": {
+      "tipoSeleccionado": "Número 1",
+      "horaIngresada": "2023-03-03T15:30:00Z"
+    },
+    "observaciones": {
+      "horaIngresada": "2023-03-03T17:30:00Z",
+      "observacionesIngresadas": "El alumno se mostró muy participativo durante la clase de matemáticas, pero se distrajo en la clase de historia."
+    }
+  },
+    {
+      "nombre": "María García",
+      "siestas": [],
+      "comida": {},
+      "bano": {},
+      "observaciones": {}
+    }
+  ]
