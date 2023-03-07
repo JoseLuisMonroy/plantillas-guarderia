@@ -17,6 +17,7 @@
 
 <script>
 import LogIn from "./services/SignIn";
+
 export default {
   data: () => ({
     email: "",
@@ -24,7 +25,19 @@ export default {
   }),
   methods: {
     login() {
-      LogIn.iniciarSesion(this.email, this.password);
+      //cuando la promesa se resuelva, se ejecuta el método redireccionar
+      LogIn.iniciarSesion(this.email, this.password).then(this.redireccionar('maestro'));
+    },
+    redireccionar(respuesta) {
+      console.log(respuesta);
+      if (respuesta == "maestro"){
+      this.$router.push("/maestro");
+      }else if (respuesta == "tutor"){
+      this.$router.push("/padre");
+      }
+      else{
+        alert("Usuario o contraseña incorrectos");
+      }
     }
   }
 };
